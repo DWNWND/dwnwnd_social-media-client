@@ -4,5 +4,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.validate": ["javascript"]
+  "eslint.validate": ["javascript"],
+  "prettier.bracketSameLine": true,
+  "prettier.singleAttributePerLine": false
+  // "prettier.htmlWhitespaceSensitivity": "ignore"
 }
