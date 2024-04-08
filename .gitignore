@@ -1,2 +1,11 @@
+# npm folders to ignore
 /node_modules
+
+# CSS files
 /dist
+
+# The lint cache
+.eslintcache
+
+# Mac OS System file
+.DS_Store
