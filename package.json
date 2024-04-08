@@ -4,6 +4,8 @@
   "description": "Workflow module CA delivery",
   "main": "index.js",
   "scripts": {
+    "test": "node src/**/*.test.js",
+    "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
     "build": "sass src/scss:dist/css",
