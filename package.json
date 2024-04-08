@@ -4,6 +4,7 @@
   "description": "Workflow module CA delivery",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint src/**/*.js",
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server"
   },
@@ -11,7 +12,7 @@
   "author": "Noroff",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^8.57.0",
     "live-server": "^1.2.2",
     "sass": "^1.54.8"
   },
