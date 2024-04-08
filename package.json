@@ -4,8 +4,8 @@
   "description": "Workflow module CA delivery",
   "main": "index.js",
   "scripts": {
-    "test": "node src/**/*.test.js",
-    "format": "prettier -w src/**/*.js",
+    "test": "node src/**/test.js",
+    "format": "prettier -w src/**/test.js",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
     "build": "sass src/scss:dist/css",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "live-server": "^1.2.2",
+    "prettier": "^3.2.5",
     "sass": "^1.54.8"
   },
   "dependencies": {
