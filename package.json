@@ -16,6 +16,7 @@
   "author": "Noroff",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
