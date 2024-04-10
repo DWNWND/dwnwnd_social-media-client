@@ -9,3 +9,6 @@
 
 # Mac OS System file
 .DS_Store
+
+# Environmental Secrets
+.env
