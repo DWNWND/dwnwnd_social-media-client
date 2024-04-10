@@ -1,1 +1,1 @@
-console.log("this is a successful test");
+console.log('this is a successful test');
