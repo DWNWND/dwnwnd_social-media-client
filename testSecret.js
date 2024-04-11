@@ -8,3 +8,5 @@ function test(expectedSecret) {
 }
 
 test("This is a secret");
+
+const thisIsUnused = "yes";
