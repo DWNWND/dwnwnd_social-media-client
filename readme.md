@@ -40,7 +40,7 @@ An open Pull Request from branch workflow into the fork’s default branch.
 - The user cannot submit the login form with invalid credentials and is shown a message.
 - The user can log out with the logout button
 
-### Testing Statusbadges from Github Actions Workflows
+### Testing Statusbadges from Github Actions Workflows runs on PR
 
 [![Automated Unit Testing](https://github.com/DWNWND/dwnwnd_social-media-client/actions/workflows/unit-test.yml/badge.svg?branch=master)](https://github.com/DWNWND/dwnwnd_social-media-client/actions/workflows/unit-test.yml)
 
@@ -72,7 +72,7 @@ npm install
 
 **If all tests ran `successfully` you are all set**
 
-### Add your own .env file based on the example
+## Add your own .env file based on the example
 
 1. Register an account here `https://app.api/register`
 2. Get your key from `https://app.api/account/keys`
