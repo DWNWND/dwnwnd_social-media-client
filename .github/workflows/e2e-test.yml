@@ -1,6 +1,8 @@
 name: Automated E2E Testing
 
-on: [workflow_dispatch, pull_request]
+on:
+  pull_request:
+  workflow_dispatch:
 
 env:
   USER_EMAIL: ${{secrets.USER_EMAIL}}
