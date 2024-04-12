@@ -1,25 +1,27 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add("navigateToLoginForm", () => {
+  cy.get("#registerForm")
+    .should("be.visible")
+    .parent()
+    .find('[data-auth="login"]')
+    .click();
+  cy.wait(500);
+});
+
+Cypress.Commands.add("testLoginCredentials", (email, password) => {
+  cy.get("#loginEmail").type(email);
+  cy.get("#loginPassword").type(password);
+  cy.get("#loginForm").submit();
+  cy.wait(1000);
+});
+
+Cypress.Commands.add("login", (url, email, password) => {
+  cy.visit(url);
+  cy.wait(500);
+  cy.get("#registerForm").should("be.visible");
+  cy.navigateToLoginForm();
+  cy.get("#loginForm").should("be.visible");
+  cy.get("#loginEmail").type(email);
+  cy.get("#loginPassword").type(password);
+  cy.get("#loginForm").submit();
+  cy.wait(1000);
+});
