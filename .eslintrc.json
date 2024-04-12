@@ -21,6 +21,12 @@
       "rules": {
         "cypress/no-unnecessary-waiting": "off"
       }
+    },
+    {
+      "files": ["cypress/support/*.js"],
+      "rules": {
+        "no-undef": "warn"
+      }
     }
   ],
   "parserOptions": {
