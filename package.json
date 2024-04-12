@@ -1,6 +1,6 @@
 {
   "name": "workflow-ca",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Workflow module CA delivery",
   "main": "index.js",
   "scripts": {
