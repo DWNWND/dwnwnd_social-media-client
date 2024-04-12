@@ -72,12 +72,12 @@ npm install
 
 **If all tests ran `successfully` you are all set**
 
-## Add your own .env file based on the example
+### Add your own **cypress.env.json** file based on the example
 
-1. Register an account here `https://app.api/register`
-2. Get your key from `https://app.api/account/keys`
-3. Visit `https://app.api/docs` for endpoints
-4. Enter username, key and target endpoint in `.env`
+1. Register a new user [here](https://dwnwnd.github.io/dwnwnd_social-media-client/)
+2. Make a new file called `cypress.env.json` in your root folder
+3. Copy the content from `cypress.env.example` into your new `cypress.env.json`file
+4. Populate the new `cypress.env.json` file with the credentials for your newly registered user
 
 ## Contact
 
