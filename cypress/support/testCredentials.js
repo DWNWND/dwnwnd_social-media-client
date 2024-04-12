@@ -1,4 +1,4 @@
-export const testUrl = "/";
+export const testUrl = "https://dwnwnd.github.io/dwnwnd_social-media-client/";
 
 export const validEmail = Cypress.env("USER_EMAIL");
 export const validPassword = Cypress.env("USER_PASSWORD");
