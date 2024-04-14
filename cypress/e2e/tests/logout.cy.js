@@ -13,11 +13,13 @@ describe("logout functionality", () => {
   });
 
   it("logs the user out by clicking the logout button", () => {
+    cy.wait("@login");
+    cy.wait(1000);
     cy.get('[data-auth="logout"]')
       .contains("Logout")
       .should("be.visible")
       .click();
-    cy.wait(500);
+    cy.wait(1000);
     cy.window().then((win) => {
       const token = win.localStorage.getItem("token");
       expect(token).to.be.null;
