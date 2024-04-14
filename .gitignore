@@ -12,3 +12,4 @@
 
 # Environmental Secrets
 .env
+cypress.env.json
